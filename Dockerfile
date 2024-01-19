@@ -1,4 +1,4 @@
-FROM python:3.10-alpine AS base
+FROM python:3.13.0a3-alpine AS base
 RUN apk update && apk upgrade && \
     apk add --no-cache git
 RUN git clone https://github.com/Crypto-Chemistry/price-oracle-monitor.git /ccpom
